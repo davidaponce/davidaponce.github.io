@@ -870,44 +870,91 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <!-- Map centered on New York -->
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps?q=New%20York,%20NY&output=embed"
+                width="400" height="300" loading="lazy">
+              </iframe>
+            </figure>
+          </section>
 
-        <section class="contact-form">
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <h3 class="h3 form-title">Contact Form</h3>
+            <!-- Formspree integration -->
+            <form id="contact-form" action="https://formspree.io/f/xrbyznll" method="POST" class="form" data-form>
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="email" name="_replyto" class="form-input" placeholder="Email address" required data-form-input>
+              </div>
 
-          <form action="#" class="form" data-form>
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="hidden" name="_subject" value="New message from davidaponce.github.io">
+              <input type="text" name="_gotcha" style="display:none"> <!-- honeypot -->
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+
+            <!-- Success & error messages -->
+            <div id="form-success" style="display:none; margin-top:12px; color:lightgreen;">
+              ✅ Thanks, your message was sent!
+            </div>
+            <div id="form-error" style="display:none; margin-top:12px; color:#ff6b6b;">
+              ⚠️ Oops! Something went wrong. Please try again.
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <p style="margin-top:12px; color:var(--light-gray);">
+              Prefer email? <a class="service-cta" href="mailto:davidaponce22@gmail.com">davidaponce22@gmail.com</a><br>
+              <small>Open to opportunities wherever innovation happens</small>
+            </p>
+          </section>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+        </article>
 
-          </form>
+        <!-- Success/Error handling script -->
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const form = document.getElementById("contact-form");
+          const success = document.getElementById("form-success");
+          const error = document.getElementById("form-error");
 
-        </section>
+          form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const data = new FormData(form);
+            try {
+              const response = await fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+              });
+              if (response.ok) {
+                success.style.display = "block";
+                error.style.display = "none";
+                form.reset();
+              } else {
+                success.style.display = "none";
+                error.style.display = "block";
+              }
+            } catch (err) {
+              success.style.display = "none";
+              error.style.display = "block";
+            }
+          });
+        });
+        </script>
 
-      </article>
 
     </div>
 
