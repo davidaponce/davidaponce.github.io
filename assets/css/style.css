@@ -1921,3 +1921,35 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .project-img img { width: 100%; height: auto; display: block; object-fit: cover; }
+
+/* --- Uniform portfolio thumbnails --- */
+.projects .project-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* consistent height for every tile */
+  overflow: hidden;
+  border-radius: 16px;        /* match your theme’s radius */
+  background: #111;           /* fallback bg before image loads */
+}
+
+.projects .project-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;          /* crop to fill the frame */
+  object-position: center;    /* center the crop */
+}
+
+/* Keep the little eye icon positioned consistently */
+.projects .project-item-icon-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+/* Make EcoPrompt image fit inside without cropping */
+.projects .project-img img[src*="ecoprompt"] {
+  object-fit: contain;
+  background-color: #111; /* adds padding bg so it doesn’t look empty */
+}
