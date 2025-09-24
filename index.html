@@ -230,7 +230,7 @@
     <!-- EcoPrompt -->
     <li class="service-item">
       <div class="service-icon-box">
-        <img src="./assets/images/icon-design.svg" alt="Sustainability icon" width="40">
+        <img src="./assets/images/ecoprompt.jpg" alt="Sustainability icon" width="40">
       </div>
       <div class="service-content-box">
         <h4 class="h4 service-item-title">
@@ -446,228 +446,94 @@
 
         <section class="projects">
 
+          <!-- Top filter tabs -->
           <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Applications</button></li>
+            <li class="filter-item"><button data-filter-btn>Web development</button></li>
+            <li class="filter-item"><button data-filter-btn>Research</button></li>
           </ul>
 
+          <!-- Mobile dropdown -->
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
             </button>
 
             <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Applications</button></li>
+              <li class="select-item"><button data-select-item>Web development</button></li>
+              <li class="select-item"><button data-select-item>Research</button></li>
             </ul>
-
           </div>
 
+          <!-- Project tiles -->
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <!-- EcoPrompt (Applications) -->
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/your-username/ecoprompt" target="_blank" rel="noopener">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/ecoprompt.png" alt="EcoPrompt Chrome extension — tokens → energy & CO₂ + savings and equivalents" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
+                <h3 class="project-title">EcoPrompt</h3>
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
+            <!-- ETS Makerspace Website (Web development) -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://ets.binghamton.edu" target="_blank" rel="noopener">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/ets-website.png" alt="ETS Makerspace Website — SvelteKit site + calendar integration" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
+                <h3 class="project-title">ETS Makerspace Website</h3>
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
+            <!-- Reddit Tech Trends (Web development) -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/your-username/reddit-tech-trends" target="_blank" rel="noopener">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/reddit-tech-trends.png" alt="Reddit Tech Trends — pipeline + Streamlit dashboard for topics & sentiment" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
+                <h3 class="project-title">Reddit Tech Trends</h3>
                 <p class="project-category">Web development</p>
+              </a>
+            </li>
 
+            <!-- DigitMaster (Research) -->
+            <li class="project-item active" data-filter-item data-category="research">
+              <a href="https://github.com/your-username/digitmaster" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/digitmaster.png" alt="DigitMaster — MNIST model with numpy preprocessing and matplotlib verification" loading="lazy">
+                </figure>
+                <h3 class="project-title">DigitMaster Neural Network</h3>
+                <p class="project-category">Research</p>
+              </a>
+            </li>
+
+            <!-- Industry Research (Intel-safe, no link) -->
+            <li class="project-item active" data-filter-item data-category="research">
+              <a href="#" onclick="return false;">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/deepfake-audio.png" alt="Industry research — adversarial defenses for deepfake audio" loading="lazy">
+                </figure>
+                <h3 class="project-title">Industry Research — Deepfake Audio Defense</h3>
+                <p class="project-category">Research</p>
               </a>
             </li>
 
           </ul>
-
         </section>
-
       </article>
 
 
@@ -971,42 +837,71 @@
   <script src="./assets/js/script.js"></script>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const pages = document.querySelectorAll('article[data-page]');
-      const navLinks = document.querySelectorAll('[data-nav-link]');
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const pages = document.querySelectorAll('article[data-page]');
+        const navLinks = document.querySelectorAll('[data-nav-link]');
 
-      function activate(pageName) {
-        pages.forEach(p => p.classList.toggle('active', p.dataset.page === pageName));
+        function activate(pageName) {
+          pages.forEach(p => p.classList.toggle('active', p.dataset.page === pageName));
+          navLinks.forEach(btn => {
+            const name = btn.textContent.trim().toLowerCase();
+            btn.classList.toggle('active', name === pageName);
+          });
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
         navLinks.forEach(btn => {
-          const name = btn.textContent.trim().toLowerCase();
-          btn.classList.toggle('active', name === pageName);
+          btn.addEventListener('click', () => {
+            const pageName = btn.textContent.trim().toLowerCase();
+            activate(pageName);
+          });
         });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
 
-      navLinks.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const pageName = btn.textContent.trim().toLowerCase();
-          activate(pageName);
+        document.querySelectorAll('a[href="#portfolio"]').forEach(a => {
+          a.addEventListener('click', (e) => {
+            e.preventDefault();
+            activate('portfolio');
+          });
         });
       });
+    </script>
 
-      document.querySelectorAll('a[href="#portfolio"]').forEach(a => {
-        a.addEventListener('click', (e) => {
-          e.preventDefault();
-          activate('portfolio');
-        });
+    <!--
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = [...document.querySelectorAll('.filter-list [data-filter-btn]')];
+    const selectItems = [...document.querySelectorAll('.select-list [data-select-item]')];
+    const projects = [...document.querySelectorAll('.project-list [data-filter-item]')];
+    const label = document.querySelector('.filter-select-box [data-selecct-value]');
+
+    function setCategory(cat) {
+      const category = cat.trim().toLowerCase();       // "all", "applications", "web development", "research"
+      // highlight active tab
+      filterBtns.forEach(b => {
+        b.classList.toggle('active', b.textContent.trim().toLowerCase() === category);
       });
-    });
+      // filter tiles
+      projects.forEach(item => {
+        const match = category === 'all' || item.dataset.category === category;
+        item.classList.toggle('active', match);        // keep template’s class
+        item.style.display = match ? '' : 'none';      // and also hard-hide
+      });
+      if (label) label.textContent = cat;
+    }
+
+    filterBtns.forEach(b => b.addEventListener('click', () => setCategory(b.textContent)));
+    selectItems.forEach(i => i.addEventListener('click', () => setCategory(i.textContent)));
+
+    setCategory('All'); // initial state
+  });
   </script>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+  </body>
 
 </html>

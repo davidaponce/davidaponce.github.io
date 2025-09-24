@@ -1919,3 +1919,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   border:0;
   background:#fff;
 }
+
+.project-img img { width: 100%; height: auto; display: block; object-fit: cover; }
